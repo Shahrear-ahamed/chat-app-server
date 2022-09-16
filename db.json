@@ -1,0 +1,222 @@
+{
+  "users": [
+    {
+      "email": "sumit@learnwithsumit.com",
+      "password": "$2a$10$tGMlJhQmAnx7f4cIVY55FOtIRV91wjRwBhdpaANPoslku3P/aAjPK",
+      "name": "Sumit Saha",
+      "id": 1
+    },
+    {
+      "email": "akash@learnwithsumit.com",
+      "password": "$2a$10$Oc6jXnK6/pbSqmkngo/b.OhsU3JRf4OU1h9QwIoqz8ZUpG/hgHq72",
+      "name": "Akash Ahmed",
+      "id": 2
+    },
+    {
+      "email": "saad@learnwithsumit.com",
+      "password": "$2a$10$DVGOgchZrtvb1w6Pj.B0D.DXmHmoTsdy3oXfwF.02kE/pzJ7jyHqy",
+      "name": "Saad Hasan",
+      "id": 3
+    },
+    {
+      "email": "shahrear@gmail.com",
+      "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+      "name": "shahrear",
+      "id": 4
+    },
+    {
+      "email": "test1@gmail.com",
+      "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+      "name": "test 1",
+      "id": 5
+    }
+  ],
+  "conversations": [
+    {
+      "participants": "test1@gmail.com-shahrear@gmail.com",
+      "users": [
+        {
+          "email": "test1@gmail.com",
+          "name": "test 1",
+          "id": 5
+        },
+        {
+          "email": "shahrear@gmail.com",
+          "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+          "name": "shahrear",
+          "id": 4
+        }
+      ],
+      "message": "ho funny ",
+      "timestamp": 1663343850090,
+      "id": 1
+    }
+  ],
+  "messages": [
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "receiver": {
+        "email": "shahrear@gmail.com",
+        "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+        "name": "shahrear",
+        "id": 4
+      },
+      "message": "Hi Shahrear",
+      "timestamp": 1663343764440,
+      "id": 1
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "shahrear@gmail.com",
+        "name": "shahrear",
+        "id": 4
+      },
+      "receiver": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "message": "Hi",
+      "timestamp": 1663343776638,
+      "id": 2
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "shahrear@gmail.com",
+        "name": "shahrear",
+        "id": 4
+      },
+      "receiver": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "message": "ke apni?",
+      "timestamp": 1663343783086,
+      "id": 3
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "receiver": {
+        "email": "shahrear@gmail.com",
+        "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+        "name": "shahrear",
+        "id": 4
+      },
+      "message": "ami apnar test 1 vai",
+      "timestamp": 1663343789111,
+      "id": 4
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "shahrear@gmail.com",
+        "name": "shahrear",
+        "id": 4
+      },
+      "receiver": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "message": "oh accha",
+      "timestamp": 1663343795009,
+      "id": 5
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "shahrear@gmail.com",
+        "name": "shahrear",
+        "id": 4
+      },
+      "receiver": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "message": "apni mane tester vai?",
+      "timestamp": 1663343802687,
+      "id": 6
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "receiver": {
+        "email": "shahrear@gmail.com",
+        "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+        "name": "shahrear",
+        "id": 4
+      },
+      "message": "ha vai tester ami",
+      "timestamp": 1663343808810,
+      "id": 7
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "receiver": {
+        "email": "shahrear@gmail.com",
+        "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+        "name": "shahrear",
+        "id": 4
+      },
+      "message": "😂😂",
+      "timestamp": 1663343814325,
+      "id": 8
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "shahrear@gmail.com",
+        "name": "shahrear",
+        "id": 4
+      },
+      "receiver": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "message": "🤣🤣 like seriously?",
+      "timestamp": 1663343831558,
+      "id": 9
+    },
+    {
+      "conversationId": 1,
+      "sender": {
+        "email": "test1@gmail.com",
+        "name": "test 1",
+        "id": 5
+      },
+      "receiver": {
+        "email": "shahrear@gmail.com",
+        "password": "$2a$10$OONlBisOCjK88f524hJRBuuFU8a1GrNWPll47KtVmwn.jew53IJ..",
+        "name": "shahrear",
+        "id": 4
+      },
+      "message": "ho funny ",
+      "timestamp": 1663343850090,
+      "id": 10
+    }
+  ]
+}
