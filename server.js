@@ -2,16 +2,18 @@ const auth = require("json-server-auth");
 const jsonServer = require("json-server");
 const express = require("express");
 const http = require("http");
-const cors = require("cors")
+const cors = require("cors");
 
 const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server);
 
 global.io = io;
-app.use(cors({
-    origin:"https://shahrear-chat-redux.netlify.app"
-}));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "*");
 //     res.header("Access-Control-Allow-Credentials", true);
@@ -27,31 +29,28 @@ const router = jsonServer.router("db.json");
 
 // response middleware
 router.render = (req, res) => {
-    const path = req.path;
-    const method = req.method;
+  const path = req.path;
+  const method = req.method;
 
-    if (
-        path.includes("/conversations") &&
-        (method === "POST" || method === "PATCH")
-    ) {
-        // emit socket event
-        io.emit("conversation", {
-            data: res.locals.data,
-        });
-    }
+  if (
+    path.includes("/conversations") &&
+    (method === "POST" || method === "PATCH")
+  ) {
+    // emit socket event
+    io.emit("conversation", {
+      data: res.locals.data,
+    });
+  }
 
-    // for single message
-    if (
-        path.includes("/messages") &&
-        (method === "POST")
-    ) {
-        // emit socket event
-        io.emit("message", {
-            data: res.locals.data,
-        });
-    }
+  // for single message
+  if (path.includes("/messages") && method === "POST") {
+    // emit socket event
+    io.emit("message", {
+      data: res.locals.data,
+    });
+  }
 
-    res.json(res.locals.data);
+  res.json(res.locals.data);
 };
 
 const middlewares = jsonServer.defaults();
@@ -63,9 +62,9 @@ app.db = router.db;
 app.use(middlewares);
 
 const rules = auth.rewriter({
-    users: 640,
-    conversations: 660,
-    messages: 660,
+  users: 640,
+  conversations: 660,
+  messages: 660,
 });
 
 app.use(rules);
