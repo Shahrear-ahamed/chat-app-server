@@ -2,25 +2,16 @@ const auth = require("json-server-auth");
 const jsonServer = require("json-server");
 const express = require("express");
 const http = require("http");
-const cors = require('cors');
+const cors = require("cors")
 
 const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server);
 
 global.io = io;
+app.use(cors())
 
 const router = jsonServer.router("db.json");
-
-server.use(
-    cors({
-        origin: true,
-        credentials: true,
-        preflightContinue: false,
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    })
-);
-server.options('*', cors());
 
 // response middleware
 router.render = (req, res) => {
