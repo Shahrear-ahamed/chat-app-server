@@ -9,7 +9,6 @@ const server = http.createServer(app);
 const io = require("socket.io")(server);
 
 global.io = io;
-app.use(cors());
 // app.use((req, res, next) => {
 //     res.header("Access-Control-Allow-Origin", "*");
 //     res.header("Access-Control-Allow-Credentials", true);
